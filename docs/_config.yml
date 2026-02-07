@@ -4,6 +4,7 @@ description: "Documentación técnica del proyecto Laravel SaaS AI Documents"
 url: "https://alexhu65.github.io"
 baseurl: "/laravel-saas-ai-documents"
 
+style: /assets/css/style.css
 
 
 remote_theme: pages-themes/minimal@v0.2.0
