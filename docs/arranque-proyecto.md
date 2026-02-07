@@ -174,7 +174,7 @@ PASOS PARA ACTIVAR GITHUB PAGES:
 4. Seleccionar Branch: main, Folder: /docs
 5. Esperar 5-10 minutos para el primer despliegue
 
-URL ESPERADA: https://alejandrochavez.github.io/laravel-saas-ai-documents
+URL ESPERADA: https://alexhu65.github.io/laravel-saas-ai-documents
 
 VERIFICAR ESTADO:
 - Settings > Pages: Ver status del build
