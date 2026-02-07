@@ -4,74 +4,84 @@ title: Laravel SaaS AI Documents
 ---
 
 # Laravel SaaS AI Documents
+### Documentación y automatización de procesos con IA para negocios B2B
 
-**Plataforma SaaS B2B para automatizar documentación y procesos internos usando Inteligencia Artificial.**
-
-Enfocado en **negocios locales y PyMEs en México** que necesitan orden, velocidad y control.
+> Plataforma SaaS enfocada en **PyMEs y negocios locales en México**  
+> para **documentar, estandarizar y mejorar procesos** usando IA.
 
 ---
 
 ## 🚨 El problema
 
 Muchas empresas:
-- Tienen procesos sin documentar
-- Pierden tiempo creando manuales, guías y políticas
-- No usan IA porque es compleja o cara
-- No tienen equipos técnicos grandes
+- No tienen documentación actualizada
+- Dependen del conocimiento de una sola persona
+- Pierden tiempo en procesos manuales
+- No aprovechan la IA por complejidad o costo
 
 ---
 
 ## 💡 La solución
 
-Laravel SaaS AI Documents permite:
+**Laravel SaaS AI Documents** permite:
 
-- Generar documentación técnica y operativa con IA
-- Estandarizar procesos internos
-- Mantener documentación versionada y actualizada
-- Centralizar conocimiento empresarial
-
-Todo desde una plataforma **simple, segura y pensada para B2B**.
+- ✨ Generar documentación automáticamente con IA
+- 📚 Centralizar procesos operativos y técnicos
+- 🔄 Versionar cambios y mejoras
+- 👥 Trabajar por empresa y equipo
 
 ---
 
-## 🤖 ¿Dónde entra la IA?
+## 🤖 ¿Cómo usamos IA?
 
 La IA se usa para:
-
-- Generar documentación a partir de prompts guiados
+- Crear documentos desde prompts guiados
 - Resumir procesos largos
-- Crear guías operativas y técnicas
-- Sugerir mejoras en documentación existente
+- Generar guías operativas
+- Proponer mejoras de redacción y estructura
 
-> La IA no reemplaza personas, **ahorra tiempo**.
+> IA como **asistente**, no como reemplazo.
 
 ---
 
-## 💰 Modelo de negocio
+## 💼 Casos de uso
 
-Suscripción mensual por empresa:
+- Manuales operativos
+- Guías internas
+- Procedimientos administrativos
+- Documentación técnica
+- Onboarding de personal
 
-| Plan | Precio estimado | Incluye |
+---
+
+## 💰 Modelo de suscripción
+
+| Plan | Precio estimado | Ideal para |
 |----|----|----|
-| Básico | $499 MXN | Docs + IA limitada |
-| Pro | $999 MXN | IA avanzada + equipos |
-| Enterprise | A medida | Integraciones |
+| Básico | $499 MXN | Microempresas |
+| Pro | $999 MXN | PyMEs |
+| Enterprise | A medida | Equipos grandes |
 
 ---
 
-## 🧭 Roadmap inicial
+## 🧭 Roadmap
 
-- ✅ Docs públicas (GitHub Pages)
-- 🔄 MVP Laravel + IA
-- 🔒 Autenticación multi-empresa
-- 💳 Pagos recurrentes
-- 📊 Métricas y uso de IA
+- ✅ Docs públicas
+- 🔄 MVP Laravel
+- 🔒 Multi-empresa
+- 💳 Suscripciones
+- 📊 Métricas de uso IA
 
 ---
 
-## 📬 ¿Te interesa?
+## 🚀 Estado del proyecto
 
-Este proyecto está en fase temprana.
+🟢 En desarrollo activo  
+📅 Inicio: Febrero 2026
 
-📧 Contacto: **contacto@tudominio.com**  
-⭐ GitHub: dale star y sigue el progreso
+---
+
+## 📬 Contacto
+
+📧 contacto@tudominio.com  
+⭐ [Repositorio en GitHub](https://github.com/AlexHu65/laravel-saas-ai-documents)
