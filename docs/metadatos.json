@@ -1,0 +1,225 @@
+{
+  "proyecto": {
+    "nombre": "Laravel SaaS AI Documents",
+    "descripcion": "Plataforma SaaS para procesamiento de documentos con inteligencia artificial",
+    "version": "0.1.0",
+    "estado": "inicial",
+    "fecha_analisis": "2024-12-19",
+    "ruta_proyecto": "/Users/alejandrochavez/Desktop/proyectos/laravel-saas-ai-documents"
+  },
+  "stack_tecnologico": {
+    "backend": {
+      "lenguaje": "PHP",
+      "version_php": "^8.2",
+      "framework": "Laravel",
+      "version_framework": "^11.31"
+    },
+    "base_datos": {
+      "driver": "no_configurado",
+      "recomendado": ["MySQL", "PostgreSQL"]
+    },
+    "frontend": {
+      "estado": "no_implementado",
+      "recomendado": ["Vue.js", "React", "Livewire"]
+    },
+    "herramientas_desarrollo": {
+      "testing": "PHPUnit ^11.0.1",
+      "code_style": "Laravel Pint ^1.13",
+      "debugging": "Laravel Pail ^1.1",
+      "environment": "Laravel Sail ^1.26"
+    }
+  },
+  "dependencias_actuales": {
+    "produccion": {
+      "laravel/framework": "^11.31",
+      "laravel/tinker": "^2.9"
+    },
+    "desarrollo": {
+      "fakerphp/faker": "^1.23",
+      "laravel/pail": "^1.1",
+      "laravel/pint": "^1.13",
+      "laravel/sail": "^1.26",
+      "mockery/mockery": "^1.6",
+      "nunomaduro/collision": "^8.1",
+      "phpunit/phpunit": "^11.0.1"
+    }
+  },
+  "dependencias_requeridas": {
+    "ia_processing": [
+      "openai/client",
+      "anthropic/claude-php"
+    ],
+    "autenticacion": [
+      "laravel/breeze",
+      "laravel/jetstream"
+    ],
+    "pagos": [
+      "laravel/cashier-stripe",
+      "laravel/cashier-paddle"
+    ],
+    "utilidades": [
+      "spatie/laravel-permission",
+      "league/flysystem-aws-s3-v3",
+      "laravel/horizon"
+    ]
+  },
+  "entidades_planificadas": {
+    "principales": [
+      {
+        "nombre": "User",
+        "descripcion": "Usuarios del sistema",
+        "relaciones": ["Company", "Document"]
+      },
+      {
+        "nombre": "Company",
+        "descripcion": "Empresas/organizaciones multi-tenant",
+        "relaciones": ["User", "Document", "Subscription"]
+      },
+      {
+        "nombre": "Document",
+        "descripcion": "Documentos para procesamiento IA",
+        "relaciones": ["User", "Company", "ProcessingJob"]
+      },
+      {
+        "nombre": "Subscription",
+        "descripcion": "Suscripciones y planes de pago",
+        "relaciones": ["Company"]
+      },
+      {
+        "nombre": "ProcessingJob",
+        "descripcion": "Jobs de procesamiento con IA",
+        "relaciones": ["Document"]
+      }
+    ]
+  },
+  "rutas_actuales": {
+    "web": [
+      {
+        "metodo": "GET",
+        "ruta": "/",
+        "descripcion": "Página principal (welcome)",
+        "controlador": "Closure"
+      },
+      {
+        "metodo": "GET",
+        "ruta": "/test-company-context",
+        "descripcion": "Ruta de prueba para contexto empresarial",
+        "controlador": "Closure"
+      }
+    ],
+    "api": []
+  },
+  "modulos_planificados": [
+    {
+      "nombre": "Autenticación",
+      "prioridad": "alta",
+      "descripcion": "Sistema de login/registro y gestión de usuarios"
+    },
+    {
+      "nombre": "Multi-tenancy",
+      "prioridad": "alta",
+      "descripcion": "Gestión de empresas y contexto multi-tenant"
+    },
+    {
+      "nombre": "Procesamiento IA",
+      "prioridad": "crítica",
+      "descripcion": "Core del negocio - procesamiento de documentos con IA"
+    },
+    {
+      "nombre": "Facturación",
+      "prioridad": "media",
+      "descripcion": "Sistema de suscripciones y pagos"
+    },
+    {
+      "nombre": "API REST",
+      "prioridad": "media",
+      "descripcion": "API para integraciones externas"
+    }
+  ],
+  "flujos_criticos": [
+    {
+      "nombre": "Onboarding Usuario",
+      "pasos": ["registro", "verificacion_email", "seleccion_plan", "setup_empresa", "primer_documento"],
+      "estado": "no_implementado"
+    },
+    {
+      "nombre": "Procesamiento Documento",
+      "pasos": ["upload", "validacion", "queue_processing", "ai_analysis", "storage", "notification"],
+      "estado": "no_implementado"
+    },
+    {
+      "nombre": "Gestión Suscripción",
+      "pasos": ["seleccion_plan", "procesamiento_pago", "activacion", "monitoreo_uso", "renovacion"],
+      "estado": "no_implementado"
+    }
+  ],
+  "servicios_externos": {
+    "planificados": [
+      {
+        "nombre": "OpenAI",
+        "proposito": "Procesamiento IA de documentos",
+        "tipo": "API"
+      },
+      {
+        "nombre": "Stripe/Paddle",
+        "proposito": "Procesamiento de pagos",
+        "tipo": "API"
+      },
+      {
+        "nombre": "AWS S3",
+        "proposito": "Almacenamiento de documentos",
+        "tipo": "Storage"
+      },
+      {
+        "nombre": "SendGrid/Mailgun",
+        "proposito": "Envío de emails",
+        "tipo": "Email"
+      }
+    ]
+  },
+  "riesgos_identificados": [
+    {
+      "tipo": "técnico",
+      "descripcion": "Proyecto en estado esqueleto - sin funcionalidad implementada",
+      "impacto": "alto"
+    },
+    {
+      "tipo": "arquitectónico",
+      "descripcion": "Falta definición de modelo de datos",
+      "impacto": "crítico"
+    },
+    {
+      "tipo": "integración",
+      "descripcion": "Sin integraciones de IA configuradas",
+      "impacto": "crítico"
+    },
+    {
+      "tipo": "seguridad",
+      "descripcion": "Sin sistema de autenticación implementado",
+      "impacto": "alto"
+    }
+  ],
+  "recomendaciones_ia": [
+    "Siempre verificar la estructura Laravel antes de realizar cambios",
+    "Crear migraciones antes de implementar modelos",
+    "Seguir convenciones Laravel para nomenclatura",
+    "Implementar tests para funcionalidades críticas",
+    "Usar service classes para lógica de negocio compleja",
+    "Configurar queues para procesamiento asíncrono de IA",
+    "Validar archivos subidos antes del procesamiento",
+    "Implementar rate limiting para APIs externas"
+  ],
+  "comandos_utiles": {
+    "desarrollo": [
+      "php artisan serve",
+      "php artisan queue:work",
+      "php artisan migrate",
+      "composer dump-autoload"
+    ],
+    "creacion": [
+      "php artisan make:model ModelName -mcr",
+      "php artisan make:controller ControllerName",
+      "php artisan make:migration migration_name"
+    ]
+  }
+}
