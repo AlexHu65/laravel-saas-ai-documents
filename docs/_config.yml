@@ -1,7 +1,10 @@
 title: "Laravel SaaS AI Documents"
 description: "Documentación técnica del proyecto Laravel SaaS AI Documents"
-baseurl: "/laravel-saas-ai-documents" # El nombre del repositorio
+
 url: "https://alexhu65.github.io"
+baseurl: "/laravel-saas-ai-documents"
+
+remote_theme: pages-themes/minimal@v0.2.0
 
 markdown: kramdown
 highlighter: rouge
@@ -10,7 +13,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-# Navegación principal
 header_pages:
   - index.md
   - ARQUITECTURA_PROYECTO.md
@@ -18,14 +20,9 @@ header_pages:
   - DIAGRAMA_ENTIDAD_RELACION.md
   - RESUMEN_PROYECTO_IA.md
 
-# Configuración para GitHub Pages
-remote_theme: pages-themes/minimal@v0.2.0
-
-# Mostrar tabla de contenidos
 kramdown:
   toc_levels: 1..3
   auto_ids: true
 
-# Configuraciones adicionales
 show_downloads: false
-google_analytics: # Agregar ID si es necesario
+google_analytics:
