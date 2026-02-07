@@ -1,12 +1,12 @@
-# Arquitectura
+# Architecture
 
-## Principios
-- Separación de dominios
-- Multi-tenancy desde el core
-- IA desacoplada del negocio
-- Escalable a múltiples productos
+## Principles
+- Domain separation
+- Multi-tenancy from the core
+- AI decoupled from business
+- Scalable to multiple products
 
-## Capas
+## Layers
 - Domain
 - Application
 - Infrastructure

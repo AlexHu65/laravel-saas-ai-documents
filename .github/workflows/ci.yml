@@ -9,6 +9,15 @@ jobs:
   laravel-tests:
     runs-on: ubuntu-latest
 
+    env:
+      DB_CONNECTION: mysql
+      DB_DATABASE: testing
+      DB_USERNAME: root
+      DB_PASSWORD: root
+      DB_HOST: 127.0.0.1
+      DB_PORT: 3306
+      APP_ENV: testing
+
     services:
       mysql:
         image: mysql:8.0
@@ -43,12 +52,6 @@ jobs:
           php artisan key:generate
 
       - name: Run migrations
-        env:
-          DB_CONNECTION: mysql
-          DB_DATABASE: testing
-          DB_USERNAME: root
-          DB_PASSWORD: root
-          DB_HOST: 127.0.0.1
         run: php artisan migrate --force
 
       - name: Run tests
