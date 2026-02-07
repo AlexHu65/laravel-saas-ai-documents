@@ -1,9 +1,7 @@
 title: "Laravel SaaS AI Documents"
 description: "Documentación técnica del proyecto Laravel SaaS AI Documents"
-baseurl: "/laravel-saas-ai-documents"
-url: "https://alejandrochavez.github.io"
-
-theme: minima
+baseurl: "/laravel-saas-ai-documents" # El nombre del repositorio
+url: "https://alexhu65.github.io"
 
 markdown: kramdown
 highlighter: rouge
