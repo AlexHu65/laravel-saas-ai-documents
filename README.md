@@ -1,33 +1,69 @@
-# Laravel SaaS AI Documents
+# Laravel SaaS AI Documents – Master Plan
 
-Base SaaS multi-tenant desarrollada en Laravel, enfocada en
-negocios locales B2B para la generación de documentos administrativos
-mediante Inteligencia Artificial.
+Proyecto SaaS B2B enfocado en negocios locales (México y LATAM),
+basado en suscripción mensual y generación de documentos administrativos con IA.
 
-## 🎯 Problema
-Las PyMEs y despachos en México pierden tiempo creando documentos
-repetitivos, mal redactados o inconsistentes.
+---
 
-## 💡 Solución
-Un SaaS por suscripción mensual que genera documentos formales,
-personalizados y reutilizables usando IA.
+## 🎯 Objetivos del proyecto
 
-## 🧱 Stack
+- Construir un SaaS multi-tenant profesional en Laravel
+- Integrar IA como servicio desacoplado
+- Monetizar vía suscripciones mensuales
+- Publicar repositorios GitHub de alto nivel técnico
+- Documentación viva con GitHub Pages
+
+---
+
+## 🧱 Stack Tecnológico
+
+### Backend
 - Laravel 11
 - PHP 8.3
 - MySQL
-- OpenAI (IA desacoplada)
-- Stripe / MercadoPago
-- Frontend: React / Angular
+- PHPUnit
 
-## 🧠 Decisiones técnicas
-- Arquitectura multi-tenant por empresa
-- IA desacoplada mediante interfaces
-- GitHub Actions para CI
-- GitHub Pages para documentación viva
+### Frontend (fase posterior)
+- React 18
+- Angular 17+
 
-## 🚀 Estado del proyecto
-MVP en desarrollo – Febrero 2026
+### Infra / DevOps
+- GitHub Actions (CI)
+- GitHub Pages (Docs)
+- Docker (opcional, fase 2)
 
-## 📄 Documentación
-La documentación del proyecto está disponible en GitHub Pages.
+### Pagos
+- Stripe (preferente)
+- MercadoPago (México)
+
+### IA
+- OpenAI (o proveedor intercambiable)
+- Arquitectura desacoplada (Strategy Pattern)
+
+---
+
+## 📁 Estructura del repositorio
+
+```text
+laravel-saas-ai-documents/
+├── app/
+│   ├── Domain/
+│   ├── Services/
+│   │   └── AI/
+│   └── Http/
+│       └── Middleware/
+├── config/
+├── database/
+├── routes/
+├── tests/
+├── docs/
+│   ├── index.md
+│   ├── architecture.md
+│   ├── roadmap.md
+│   └── project-plan.md
+├── .github/
+│   └── workflows/
+│       └── ci.yml
+├── docker/
+├── README.md
+└── .env.example
