@@ -16,16 +16,16 @@ Plataforma SaaS para procesamiento inteligente de documentos corporativos con te
 La documentación completa está disponible en **[GitHub Pages](https://alexhu65.github.io/laravel-saas-ai-documents/)**
 
 ### Documentos Principales:
-- 🏗️ **[Arquitectura del Proyecto](https://alexhu65.github.io/laravel-saas-ai-documents//ARQUITECTURA_PROYECTO.html)**
-- 🤖 **[Guía de Operación para IA](https://alexhu65.github.io/laravel-saas-ai-documents//GUIA_IA_PROYECTO.html)**
-- 🗄️ **[Diagrama Entidad-Relación](https://alexhu65.github.io/laravel-saas-ai-documents//DIAGRAMA_ENTIDAD_RELACION.html)**
+- 🏗️ **[Arquitectura del Proyecto](https://alexhu65.github.io/laravel-saas-ai-documents/ARQUITECTURA_PROYECTO.html)**
+- 🤖 **[Guía de Operación para IA](https://alexhu65.github.io/laravel-saas-ai-documents/GUIA_IA_PROYECTO.html)**
+- 🗄️ **[Diagrama Entidad-Relación](https://alexhu65.github.io/laravel-saas-ai-documents/DIAGRAMA_ENTIDAD_RELACION.html)**
 - 📄 **[Resumen para IA](https://alexhu65.github.io/laravel-saas-ai-documents//RESUMEN_PROYECTO_IA.html)**
 
 ## 🛠️ Instalación
 
 ```bash
 # Clonar repositorio
-git clone https://github.com/alejandrochavez/laravel-saas-ai-documents.git
+git clone https://github.com/AlexHu65/laravel-saas-ai-documents.git
 cd laravel-saas-ai-documents
 
 # Instalar dependencias
@@ -121,9 +121,10 @@ Si eres una IA trabajando en este proyecto:
 ## 📞 Soporte
 
 - **Documentación**: [GitHub Pages](https://alexhu65.github.io/laravel-saas-ai-documents/)
-- **Issues**: [GitHub Issues](https://github.com/alejandrochavez/laravel-saas-ai-documents/issues)
-- **Wiki**: [Project Wiki](https://github.com/alejandrochavez/laravel-saas-ai-documents/wiki)
+- **Issues**: [GitHub Issues](https://alexhu65.github.io/laravel-saas-ai-documents/issues)
+- **Wiki**: [Project Wiki](https://alexhu65.github.io/laravel-saas-ai-documents/wiki)
 
 ---
 
 **⚠️ Nota**: Este proyecto está en desarrollo inicial. La documentación describe la arquitectura planificada, no la implementación actual.
+
