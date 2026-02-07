@@ -13,12 +13,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-header_pages:
-  - index.md
-  - ARQUITECTURA_PROYECTO.md
-  - GUIA_IA_PROYECTO.md
-  - DIAGRAMA_ENTIDAD_RELACION.md
-  - RESUMEN_PROYECTO_IA.md
 
 kramdown:
   toc_levels: 1..3
