@@ -169,7 +169,7 @@ graph TB
 
 - **Proyecto**: Laravel SaaS AI Documents
 - **Versión**: 0.1.0 (Estado Inicial)
-- **Documentación**: [GitHub Pages](https://alejandrochavez.github.io/laravel-saas-ai-documents)
+- **Documentación**: [GitHub Pages](https://alexhu65.github.io/laravel-saas-ai-documents/)
 - **Repositorio**: [GitHub Repository](https://github.com/alejandrochavez/laravel-saas-ai-documents)
 
 ---

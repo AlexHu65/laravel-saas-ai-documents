@@ -3,7 +3,7 @@
 [![Laravel](https://img.shields.io/badge/Laravel-11.31-red?style=flat-square&logo=laravel)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-%5E8.2-blue?style=flat-square&logo=php)](https://php.net)
 [![Estado](https://img.shields.io/badge/Estado-Inicial-yellow?style=flat-square)](#)
-[![Documentación](https://img.shields.io/badge/Docs-GitHub%20Pages-green?style=flat-square)](https://alejandrochavez.github.io/laravel-saas-ai-documents)
+[![Documentación](https://img.shields.io/badge/Docs-GitHub%20Pages-green?style=flat-square)](https://alexhu65.github.io/laravel-saas-ai-documents/)
 
 Plataforma SaaS para procesamiento inteligente de documentos corporativos con tecnologías de IA.
 
@@ -13,13 +13,13 @@ Plataforma SaaS para procesamiento inteligente de documentos corporativos con te
 
 ## 📚 Documentación
 
-La documentación completa está disponible en **[GitHub Pages](https://alejandrochavez.github.io/laravel-saas-ai-documents)**
+La documentación completa está disponible en **[GitHub Pages](https://alexhu65.github.io/laravel-saas-ai-documents/)**
 
 ### Documentos Principales:
-- 🏗️ **[Arquitectura del Proyecto](https://alejandrochavez.github.io/laravel-saas-ai-documents/ARQUITECTURA_PROYECTO.html)**
-- 🤖 **[Guía de Operación para IA](https://alejandrochavez.github.io/laravel-saas-ai-documents/GUIA_IA_PROYECTO.html)**
-- 🗄️ **[Diagrama Entidad-Relación](https://alejandrochavez.github.io/laravel-saas-ai-documents/DIAGRAMA_ENTIDAD_RELACION.html)**
-- 📄 **[Resumen para IA](https://alejandrochavez.github.io/laravel-saas-ai-documents/RESUMEN_PROYECTO_IA.html)**
+- 🏗️ **[Arquitectura del Proyecto](https://alexhu65.github.io/laravel-saas-ai-documents//ARQUITECTURA_PROYECTO.html)**
+- 🤖 **[Guía de Operación para IA](https://alexhu65.github.io/laravel-saas-ai-documents//GUIA_IA_PROYECTO.html)**
+- 🗄️ **[Diagrama Entidad-Relación](https://alexhu65.github.io/laravel-saas-ai-documents//DIAGRAMA_ENTIDAD_RELACION.html)**
+- 📄 **[Resumen para IA](https://alexhu65.github.io/laravel-saas-ai-documents//RESUMEN_PROYECTO_IA.html)**
 
 ## 🛠️ Instalación
 
@@ -96,9 +96,9 @@ php artisan serve
 
 Si eres una IA trabajando en este proyecto:
 
-1. **LEE PRIMERO**: [Guía de Operación para IA](https://alejandrochavez.github.io/laravel-saas-ai-documents/GUIA_IA_PROYECTO.html)
-2. **CONTEXTO**: [Resumen del Proyecto](https://alejandrochavez.github.io/laravel-saas-ai-documents/RESUMEN_PROYECTO_IA.html)
-3. **ARQUITECTURA**: [ERD y Especificaciones](https://alejandrochavez.github.io/laravel-saas-ai-documents/DIAGRAMA_ENTIDAD_RELACION.html)
+1. **LEE PRIMERO**: [Guía de Operación para IA](https://alexhu65.github.io/laravel-saas-ai-documents//GUIA_IA_PROYECTO.html)
+2. **CONTEXTO**: [Resumen del Proyecto](https://alexhu65.github.io/laravel-saas-ai-documents//RESUMEN_PROYECTO_IA.html)
+3. **ARQUITECTURA**: [ERD y Especificaciones](https://alexhu65.github.io/laravel-saas-ai-documents//DIAGRAMA_ENTIDAD_RELACION.html)
 
 ### Reglas Críticas:
 - ✅ Siempre crear migraciones antes de modelos
@@ -120,7 +120,7 @@ Si eres una IA trabajando en este proyecto:
 
 ## 📞 Soporte
 
-- **Documentación**: [GitHub Pages](https://alejandrochavez.github.io/laravel-saas-ai-documents)
+- **Documentación**: [GitHub Pages](https://alexhu65.github.io/laravel-saas-ai-documents/)
 - **Issues**: [GitHub Issues](https://github.com/alejandrochavez/laravel-saas-ai-documents/issues)
 - **Wiki**: [Project Wiki](https://github.com/alejandrochavez/laravel-saas-ai-documents/wiki)
 
