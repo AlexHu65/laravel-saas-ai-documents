@@ -1,31 +1,58 @@
 <nav class="menu">
     <ul>
-        <li><a href="/">INICIO</a></li>
-        <li><a href="./ARQUITECTURA_PROYECTO.html">ARQUITECTURA_PROYECTO</a></li>
-        <li><a href="./DIAGRAMA_ENTIDAD_RELACION.html">DIAGRAMA_ENTIDAD_RELACION</a></li>
-        <li><a href="./FLUJO_NEGOCIO.html">FLUJO_NEGOCIO</a></li>
-        <li><a href="./GUIA_IA_PROYECTO.html">GUIA_IA_PROYECTO</a></li>
-        <li><a href="./GUIA_TECNICA.html">GUIA_TECNICA</a></li>
-        <li><a href="./RESUMEN_PROYECTO_IA.html">RESUMEN_PROYECTO_IA</a></li>
-        <li><a href="./roadmap.html">roadmap</a></li>
+        <li><a href="/">Inicio</a></li>
+        <li><a href="./ARQUITECTURA_PROYECTO.html">Arquitectura del Proyecto</a></li>
+        <li><a href="./DIAGRAMA_ENTIDAD_RELACION.html">Diagrama Entidad-Relación</a></li>
+        <li><a href="./FLUJO_NEGOCIO.html">Flujo de Negocio</a></li>
+        <li><a href="./GUIA_IA_PROYECTO.html">Guía IA del Proyecto</a></li>
+        <li><a href="./GUIA_TECNICA.html">Guía Técnica</a></li>
+        <li><a href="./RESUMEN_PROYECTO_IA.html">Resumen del Proyecto IA</a></li>
     </ul>
 </nav>
 
 <style>
+    .menu {
+        background-color: #f8f9fa;
+        border-bottom: 2px solid #e9ecef;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
     .menu ul {
         list-style: none;
         padding: 0;
         margin: 0;
         display: flex;
-        gap: 20px;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .menu li {
+        display: inline;
     }
 
     .menu a {
         text-decoration: none;
-        color: #333;
+        color: #007bff;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s ease, transform 0.2s ease;
     }
 
     .menu a:hover {
-        color: #0066cc;
+        color: #0056b3;
+        transform: scale(1.1);
+    }
+
+    @media (max-width: 768px) {
+        .menu ul {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .menu a {
+            font-size: 14px;
+        }
     }
 </style>
