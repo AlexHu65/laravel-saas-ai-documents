@@ -16,4 +16,14 @@ class Company extends Model
     {
         return $this->hasMany(User::class);
     }
+
+    public function activeSubscription()
+    {
+        return $this->hasOne(Subscription::class)->where('status', 'active');
+    }
+
+    public function currentPlan()
+    {
+        return $this->activeSubscription?->plan;
+    }
 }
