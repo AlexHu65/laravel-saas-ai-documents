@@ -18,6 +18,7 @@ return new class extends Migration
             $table->integer('ia_request_limit');
             $table->integer('user_limit');
             $table->boolean('is_active')->default(true);
+            $table->json('features')->nullable();
             $table->timestamps();
         });
     }
