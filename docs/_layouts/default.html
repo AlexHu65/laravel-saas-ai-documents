@@ -20,22 +20,23 @@
 
     <!-- Default theme CSS -->
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-    
+
     <!-- Custom CSS Override -->
     <style>
       {{ site.data.styles | default: '' }}
     </style>
-    
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
-    
+
     {% include head-custom.html %}
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+        <!-- <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1> -->
+        <!-- <p>{{ site.description | default: site.github.project_tagline }}</p> -->
 
         {% if site.logo %}
           <img src="{{site.logo | relative_url}}" alt="Logo" />
@@ -58,7 +59,7 @@
           <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
         </ul>
         {% endif %}
-        
+
         <!-- Navigation menu -->
         {% if site.header_pages %}
         <nav>
@@ -71,6 +72,9 @@
         </nav>
         {% endif %}
       </header>
+    <section class="sidebar">
+        {% include menu.html %}
+    </section>
       <section>
         {{ content }}
       </section>
@@ -82,5 +86,6 @@
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% include mermaid.html %}
   </body>
 </html>
