@@ -1,58 +1,171 @@
 <nav class="menu">
-    <ul>
-        <li><a href="/">Inicio</a></li>
-        <li><a href="/ARQUITECTURA_PROYECTO.html">Arquitectura del Proyecto</a></li>
-        <li><a href="/DIAGRAMA_ENTIDAD_RELACION.html">Diagrama Entidad-Relación</a></li>
-        <li><a href="/FLUJO_NEGOCIO.html">Flujo de Negocio</a></li>
-        <li><a href="/GUIA_IA_PROYECTO.html">Guía IA del Proyecto</a></li>
-        <li><a href="/GUIA_TECNICA.html">Guía Técnica</a></li>
-        <li><a href="/RESUMEN_PROYECTO_IA.html">Resumen del Proyecto IA</a></li>
-    </ul>
+    <div class="menu-container">
+        <div class="menu-grid">
+            <a href="/" class="menu-item home">
+                <span class="menu-emoji">🏠</span>
+                <span class="menu-title">Inicio</span>
+            </a>
+            <a href="/ARQUITECTURA_PROYECTO.html" class="menu-item">
+                <span class="menu-emoji">🏗️</span>
+                <span class="menu-title">Arquitectura</span>
+            </a>
+            <a href="/DIAGRAMA_ENTIDAD_RELACION.html" class="menu-item">
+                <span class="menu-emoji">📊</span>
+                <span class="menu-title">Diagrama ER</span>
+            </a>
+            <a href="/FLUJO_NEGOCIO.html" class="menu-item">
+                <span class="menu-emoji">🔄</span>
+                <span class="menu-title">Flujo Negocio</span>
+            </a>
+            <a href="/GUIA_IA_PROYECTO.html" class="menu-item">
+                <span class="menu-emoji">🤖</span>
+                <span class="menu-title">Guía IA</span>
+            </a>
+            <a href="/GUIA_TECNICA.html" class="menu-item">
+                <span class="menu-emoji">⚙️</span>
+                <span class="menu-title">Guía Técnica</span>
+            </a>
+            <a href="/RESUMEN_PROYECTO_IA.html" class="menu-item">
+                <span class="menu-emoji">📋</span>
+                <span class="menu-title">Resumen IA</span>
+            </a>
+            <a href="/roadmap.html" class="menu-item">
+                <span class="menu-emoji">🧭</span>
+                <span class="menu-title">Roadmap</span>
+            </a>
+        </div>
+    </div>
 </nav>
 
 <style>
     .menu {
-        background-color: #f8f9fa;
-        border-bottom: 2px solid #e9ecef;
-        padding: 10px 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 20px 0;
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        backdrop-filter: blur(10px);
     }
 
-    .menu ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
+    .menu-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 15px;
+        justify-items: center;
+    }
+
+    .menu-item {
         display: flex;
+        flex-direction: column;
+        align-items: center;
         justify-content: center;
-        gap: 30px;
-    }
-
-    .menu li {
-        display: inline;
-    }
-
-    .menu a {
         text-decoration: none;
-        color: #007bff;
-        font-weight: bold;
-        font-size: 16px;
-        transition: color 0.3s ease, transform 0.2s ease;
+        color: white;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 12px;
+        padding: 12px 8px;
+        min-height: 70px;
+        width: 100%;
+        max-width: 140px;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        position: relative;
+        overflow: hidden;
     }
 
-    .menu a:hover {
-        color: #0056b3;
-        transform: scale(1.1);
+    .menu-item::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s;
     }
 
+    .menu-item:hover::before {
+        left: 100%;
+    }
+
+    .menu-item:hover {
+        transform: translateY(-3px);
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .menu-item.home {
+        background: linear-gradient(135deg, #ffeaa7, #fab1a0);
+        color: #2d3436;
+    }
+
+    .menu-item.home:hover {
+        background: linear-gradient(135deg, #fdcb6e, #e17055);
+    }
+
+    .menu-emoji {
+        font-size: 24px;
+        margin-bottom: 4px;
+        display: block;
+        filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    }
+
+    .menu-title {
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.2;
+        letter-spacing: 0.5px;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Responsive */
     @media (max-width: 768px) {
-        .menu ul {
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
+        .menu-grid {
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 10px;
         }
 
-        .menu a {
-            font-size: 14px;
+        .menu-item {
+            min-height: 60px;
+            max-width: 120px;
+            padding: 10px 6px;
+        }
+
+        .menu-emoji {
+            font-size: 20px;
+        }
+
+        .menu-title {
+            font-size: 11px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .menu-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .menu-item {
+            min-height: 55px;
+        }
+
+        .menu-emoji {
+            font-size: 18px;
+        }
+
+        .menu-title {
+            font-size: 10px;
         }
     }
 </style>
