@@ -31,4 +31,9 @@ class Company extends Model
     {
         return $this->hasMany(Subscription::class);
     }
+
+    public function aiUsages()
+    {
+        return $this->hasMany(AIUsage::class);
+    }
 }
