@@ -549,7 +549,7 @@ nav_order: 3
         <div class="contact-icon">💾</div>
         <div class="contact-info">
           <h4>Repositorio</h4>
-          <p><a href="https://github.com/alejandrochavez/laravel-saas-ai-documents" class="link" target="_blank">GitHub Repository</a></p>
+          <p><a href="https://alexhu65.github.io/laravel-saas-ai-documents/" class="link" target="_blank">GitHub Repository</a></p>
         </div>
       </div>
     </div>

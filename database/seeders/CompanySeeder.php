@@ -16,15 +16,22 @@ class CompanySeeder extends Seeder
      */
     public function run(): void
     {
-        $company = Company::create([
+        $company = Company::updateOrCreate([
             'name' => 'Acme Corporation',
             'slug' => Str::slug('Acme Corporation'),
         ]);
 
-        User::factory()->create([
+        $user = [
             'name' => 'John Doe',
             'email' => 'john.doe@example.com',
-            'company_id' => $company->id,
-        ]);
+        ];
+
+        if (!User::where('email', $user['email'])->exists()) {
+            User::factory()->create([
+                'name' => 'John Doe',
+                'email' => 'john.doe@example.com',
+                'company_id' => $company->id,
+            ]);
+        }
     }
 }

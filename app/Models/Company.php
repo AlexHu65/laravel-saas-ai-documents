@@ -26,4 +26,9 @@ class Company extends Model
     {
         return $this->activeSubscription?->plan;
     }
+
+    public function subscriptions()
+    {
+        return $this->hasMany(Subscription::class);
+    }
 }
