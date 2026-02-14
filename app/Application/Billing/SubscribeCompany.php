@@ -8,9 +8,9 @@ use App\Models\Plan;
 
 class SubscribeCompany
 {
-    public function __construct(protected PaymentGatewayInterface $gateway) {
-
-    }
+    public function __construct(
+        protected PaymentGatewayInterface $gateway
+    ) {}
 
     public function execute(Company $company, Plan $plan): void
     {
