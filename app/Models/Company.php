@@ -36,4 +36,9 @@ class Company extends Model
     {
         return $this->hasMany(AIUsage::class);
     }
+
+    public function company()
+    {
+        return $this->belongsTo(Company::class);
+    }
 }
