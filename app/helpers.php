@@ -6,3 +6,8 @@ if (!function_exists('company')) {
         return app()->bound('company') ? app('company') : null;
     }
 }
+
+function feature(string $code): bool
+{
+    return company()?->hasFeature($code) ?? false;
+}

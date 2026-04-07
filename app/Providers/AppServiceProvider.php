@@ -7,6 +7,7 @@ use App\Domain\Billing\Contracts\PaymentGatewayInterface;
 use App\Infrastructure\Billing\FakeGateway;
 use App\Domain\AI\Contracts\AIProviderInterface;
 use App\Infrastructure\AI\FakeAIProvider;
+use App\Infrastructure\Billing\StripeGateway;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -17,6 +18,7 @@ class AppServiceProvider extends ServiceProvider
     {
         $this->app->bind(PaymentGatewayInterface::class, FakeGateway::class);
         $this->app->bind(AIProviderInterface::class, FakeAIProvider::class);
+        $this->app->bind(PaymentGatewayInterface::class, StripeGateway::class);
     }
 
     /**

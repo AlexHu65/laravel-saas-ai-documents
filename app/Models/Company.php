@@ -41,4 +41,18 @@ class Company extends Model
     {
         return $this->belongsTo(Company::class);
     }
+
+    public function hasFeature(string $featureCode): bool
+    {
+        $subscription = $this->activeSubscription;
+
+        if (!$subscription) {
+            return false;
+        }
+
+        return $subscription->plan
+            ->features()
+            ->where('code', $featureCode)
+            ->exists();
+    }
 }

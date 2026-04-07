@@ -12,13 +12,18 @@ return Application::configure(basePath: dirname(__DIR__))
         commands: __DIR__.'/../routes/console.php',
         health: '/up',
     )
-    /*->withMiddleware(function (Middleware $middleware) {
-        $middleware->appendToGroup('web', [
-            SetCompanyContext::class,
-        ]);
-    })*/
     ->withMiddleware(function ($middleware) {
-        $middleware->append(\App\Http\Middleware\SetCompanyContext::class);
+        $middleware->web(append: [
+            \App\Http\Middleware\SetCompanyContext::class,
+        ]);
+
+        $middleware->api(append: [
+            \App\Http\Middleware\SetCompanyContext::class,
+        ]);
+
+        $middleware->alias([
+            'role' => \App\Http\Middleware\EnsureUserHasRole::class,
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
