@@ -337,7 +337,7 @@ body {
 }
 
 .section-title--left {
-  text-align: left;
+  text-align: center;
   border-bottom-color: transparent;
   background: var(--gradient-primary);
   -webkit-background-clip: text;
@@ -416,7 +416,6 @@ body {
 .experience-codepen .timeline {
   position: relative;
   width: 100%;
-  max-width: 660px;
   margin: 1.25rem auto 0;
   padding: 1em 0;
   list-style: none;
@@ -485,7 +484,7 @@ body {
   border-radius: 8px;
   font-weight: 600;
   text-align: left;
-  font-size: 0.95rem;
+  font-size: 0.75rem;
   color: var(--text-primary);
   border: 1px solid var(--border-color);
 }
@@ -783,6 +782,7 @@ body {
 }
 
 .skill-tag {
+  cursor: pointer;
   display: inline-block;
   padding: 5px 12px;
   border-radius: 999px;
