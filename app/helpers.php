@@ -7,7 +7,9 @@ if (!function_exists('company')) {
     }
 }
 
-function feature(string $code): bool
-{
-    return company()?->hasFeature($code) ?? false;
+if (!function_exists('feature')) {
+    function feature(string $code): bool
+    {
+        return company()?->hasFeature($code) ?? false;
+    }
 }
