@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -e
+
+if [ "$LARAVEL_SAIL" = "1" ]; then
+    echo "Running database migrations..."
+
+    retries=30
+    until php artisan migrate --force; do
+        retries=$((retries - 1))
+        if [ "$retries" -le 0 ]; then
+            echo "Database migrations failed after multiple attempts."
+            exit 1
+        fi
+
+        echo "Database is not ready yet. Retrying migrations in 2 seconds..."
+        sleep 2
+    done
+
+    echo "Running database seeders..."
+    php artisan db:seed --force
+fi
+
+exec /usr/local/bin/start-container

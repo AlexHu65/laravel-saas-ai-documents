@@ -21,6 +21,8 @@ class SubscribeCompany
         $subscription = $this->gateway->createSubscription([
             'customer_id' => $customer['id'],
             'price_id' => $plan->stripe_price_id,
+            'company_id' => $company->id,
+            'plan_id' => $plan->id,
         ]);
 
         return $subscription['url'];

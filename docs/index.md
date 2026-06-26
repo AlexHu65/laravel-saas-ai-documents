@@ -200,10 +200,13 @@ title: Laravel SaaS AI Documents
       </div>
       <div class="status-item">
         <span class="status-dot"></span>
-        <span>MVP: En progreso</span>
+        <span>Entorno local: Sail + Docker</span>
       </div>
     </div>
-    <p class="launch-date">🎯 <strong>Lanzamiento público:</strong> Q2 2025</p>
+    <p class="launch-date">
+      🐳 <strong>Desarrollo local:</strong>
+      <a href="./DESARROLLO_LOCAL_SAIL.html">Guía Sail / Docker</a>
+    </p>
   </div>
 </div>
 

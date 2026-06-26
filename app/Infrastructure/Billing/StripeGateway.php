@@ -28,9 +28,13 @@ class StripeGateway implements PaymentGatewayInterface
             'mode' => 'subscription',
             'customer' => $data['customer_id'],
             'line_items' => [[
-                'price' => $data['price_id'], // Stripe Price ID
+                'price' => $data['price_id'],
                 'quantity' => 1,
             ]],
+            'metadata' => [
+                'company_id' => $data['company_id'],
+                'plan_id' => $data['plan_id'],
+            ],
             'success_url' => url('/success'),
             'cancel_url' => url('/cancel'),
         ]);

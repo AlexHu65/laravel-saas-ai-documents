@@ -1,8 +1,24 @@
 <?php
 
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\DocsController;
+use App\Http\Controllers\StripeWebhookController;
 use App\Http\Controllers\SubscriptionController;
 
+
+Route::get('/docs-assets/{path}', function (string $path) {
+    abort_if(str_contains($path, '..'), 404);
+
+    $file = base_path('docs/assets/'.$path);
+    abort_unless(is_file($file), 404);
+
+    return response()->file($file);
+})->where('path', '.*');
+
+Route::get('/', [DocsController::class, 'index'])->name('home');
+Route::get('/home', [DocsController::class, 'index']);
+Route::get('/docs/{page}', [DocsController::class, 'show'])->name('docs.show');
 
 // Test routes
 Route::get('/test-company-context', function () {
@@ -49,3 +65,5 @@ Route::get('/manager', function () {
 })->middleware('role:manager');
 
 Route::get('/subscribe/{plan}', [SubscriptionController::class, 'subscribe']);
+
+Route::post('/stripe/webhook', [StripeWebhookController::class, 'handle']);
